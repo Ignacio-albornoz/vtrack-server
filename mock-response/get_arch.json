@@ -1,0 +1,15 @@
+{
+    "data": 
+            {
+                "_ac": false,
+                "_createdAt": "2018-11-13T07:16:04.797208+00:00",
+                "_id": "ECS",
+                "_locator": "//vtrack/archs/ECS",
+                "_parent": "//vtrack/archs",
+                "_type": "vtrack.Arch",
+                "_updatedAt": "2018-11-13T07:16:04.797208+00:00",
+                "description": "Ether Cloud Services",
+                "name": "ECS",
+                "platform": "Ether"
+            }
+}

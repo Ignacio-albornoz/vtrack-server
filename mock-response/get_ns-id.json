@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "_ac": true,
+            "_createdAt": "2018-12-26T05:23:19.069272+00:00",
+            "_id": "test_component",
+            "_locator": "//vtrack/ns/test/components/test_component",
+            "_parent": "//vtrack/ns/test/components",
+            "_type": "vtrack.Component",
+            "_updatedAt": "2018-12-26T05:23:19.069272+00:00",
+            "application": "test_application",
+            "architecture": "test_arch",
+            "component": "test_component",
+            "ns": "test",
+            "type": "test_type",
+            "project": "test_project",
+            "uuaa": "test",
+            "vcs_repo": "test_repo",
+            "metadata": {
+                "key1": "value"
+            }
+        }
+    ],
+    "pagination": {
+        "links": {
+            "first": "/v0/ns/test/components?pageSize=1",
+            "next": "/v0/ns/test/components?pageSize=1&paginationKey=1"
+        },
+        "page": 0,
+        "pageSize": 1
+    }
+
+}

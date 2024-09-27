@@ -1,0 +1,20 @@
+{
+    "data":  {
+                    "_ac": true,
+                    "_id": "your_component_name",
+                    "_locator": "//vtrack/ns/john.doe.test/components/your_component_name",
+                    "_parent": "//vtrack/ns/john.doe.test/components",
+                    "_type": "vtrack.Component",
+                    "_createdAt": "2019-01-21T09:57:54.734050+00:00",
+                    "_createdBy": "EXXXXXX",
+                    "_updatedAt": "2019-01-21T09:57:54.734050+00:00",
+                    "application": "your_app_name",
+                    "architecture": "your_arch",
+                    "component": "your_component_name",
+                    "ns": "john.doe.test",
+                    "type": "service",
+                    "project": "your_project_name",
+                    "uuaa": "UUAA",
+                    "vcs_repo": "https://www.your_code_repo.com"
+                }
+    }

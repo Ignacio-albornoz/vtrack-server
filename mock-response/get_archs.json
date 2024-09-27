@@ -1,0 +1,52 @@
+{
+    "data": [
+                {
+                    "_ac": false,
+                    "_createdAt": "2018-11-13T07:16:04.797208+00:00",
+                    "_id": "ECS",
+                    "_locator": "//vtrack/archs/ECS",
+                    "_parent": "//vtrack/archs",
+                    "_type": "vtrack.Arch",
+                    "_updatedAt": "2018-11-13T07:16:04.797208+00:00",
+                    "description": "Ether Cloud Services",
+                    "name": "ECS",
+                    "platform": "Ether"
+                },
+                {
+                    "_ac": false,
+                    "_createdAt": "2018-11-13T07:16:04.797208+00:00",
+                    "_createdBy": "devops-cross",
+                    "_id": "APX",
+                    "_locator": "//vtrack/archs/APX",
+                    "_parent": "//vtrack/archs",
+                    "_type": "vtrack.Arch",
+                    "_updatedAt": "2018-11-19T15:11:00.094694+00:00",
+                    "description": "desc",
+                    "name": "APX",
+                    "platform": "PAAS",
+                    "constraints": {
+                            "build": {
+                                "status": {
+                                    "choices": [
+                                        "successful"
+                                    ]
+                                }
+                            },
+                            "component": {
+                                "type": {
+                                    "choices": [
+                                        "jar",
+                                        "binary"
+                                    ]
+                                }
+                            },
+                            "deploy": {
+                                "userdeploy": {
+                                    "regex": "^(E|M)[0-9]+$"
+                                }
+                            }
+    
+                        }
+                }
+            ]
+}
