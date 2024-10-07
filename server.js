@@ -49,24 +49,9 @@ app.patch('/ns/:nsId/components/:componentId', (req, res) => {
 /* GET /ns/{ns-id}/components/{component-id}/builds
     Service for listing all builds of a component within given Namespace.  
 */
-app.get('/v0/ns/:namespace/components/:architecture.:repo/builds', (req, res) => {
-    // Obtener los parámetros de ruta
-    const { namespace, architecture, repo } = req.params;
-
-    // Obtener los parámetros de consulta (si existen)
-    const { q } = req.query;
-
-    // Aquí puedes procesar el parámetro `q` si está presente
-    if (q.length == 0) {
-        console.log(`Query parameter 'q' found: ${q}`);
-        // Puedes parsear el query si es necesario. En este caso, 'q' está en la forma `version=like='exampleVersion'`
-        // Ejemplo simple para extraer la versión de la consulta `q`
-    }
-
-    // En este caso, devuelve la misma respuesta que ya tienes configurada
+app.get('/v0/ns/:namespace/components/:componentId/builds', (req, res) => {
     res.json(getNsIdComponentsBuildQuery);
 });
-
 
 
 /*  GET /ns/{ns-id}/components/{component-id}/builds/{build-id}/deploys
