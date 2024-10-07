@@ -48,7 +48,7 @@ app.patch('/ns/:nsId/components/:componentId', (req, res) => {
 /*  GET /ns/{ns-id}/components/{component-id}/builds/{build-id}/deploys
     Service for listing all deploys of a build.  
 */
-app.get('/ns/:nsId/components/:componentId/builds/:buildId/deploys', (req, res) => {
+app.get('/v0/ns/:nsId/components/:componentId/builds/:buildId/deploys', (req, res) => {
     res.json(getNsIdComponentsBuild);
 });
 
