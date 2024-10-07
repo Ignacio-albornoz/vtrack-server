@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 
 const archsResponse = require('./mock-response/get_archs.json');
 const archResponse = require('./mock-response/get_arch.json');
