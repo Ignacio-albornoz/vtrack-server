@@ -1,0 +1,78 @@
+{
+    "data": [
+            {
+                "_ac": false,
+                "_createdAt": "2018-12-26T06:43:47.931825+00:00",
+                "_id": "0.0.3",
+                "_locator": "//vtrack/ns/test/components/test_component/builds/0.0.3",
+                "_parent": "//vtrack/ns/test/components/test_component/builds",
+                "_type": "vtrack.Build",
+                "_updatedAt": "2018-12-26T06:43:47.931825+00:00",
+                "artifacts": [
+
+                    {
+                        "id": "myArtifact:0.1"
+                    },
+                    {
+                        "id": "myArtifact2:1.2.1"
+                    }
+
+                ],
+                "dependencies": [
+
+                    {
+                        "id": "myArtifact:0.1"
+                    },
+                    {
+                        "id": "myArtifact2:1.2.1"
+                    }
+
+                ],
+                "branch": "develop",
+                "buildnumber": 1,
+                "commit": "2115611531a11531sass",
+                "component_id": "test_component",
+                "duration": 0,
+                "end_date": "2018-02-22T07:00:39+00:00",
+                "inception_time":"2017-02-22T07:00:39+00:00",
+                "metadata": {
+
+                    "logs": {
+                        "url": "s3Url"
+                    }
+
+                },
+                "ns": "test",
+                "security": {
+
+                    "static": {
+                        "url": "chimeraUrl"
+                    }
+
+                },
+                "slave": ["test-slave-global"],
+                "start_date": "2018-02-22T07:00:39+00:00",
+                "status": "successful",
+                "testing": {
+
+                    "static": {
+                        "url": "sonarUrl"
+                    }
+
+                },
+                "url": "http://jkurl",
+                "userbuild": "pepe@bbva.com",
+                "version": "0.0.3"
+
+        }
+    ],
+    "pagination": {
+        "links": {
+            "first": "/v0/ns/test/components/test_component/builds?pageSize=1",
+            "next": "/v0/ns/test/components/test_component/builds?pageSize=1&paginationKey=1"
+        },
+        "page": 0,
+        "pageSize": 1
+    }
+
+}
