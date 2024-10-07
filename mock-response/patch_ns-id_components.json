@@ -1,0 +1,30 @@
+{
+    "data": {
+                    "_ac": false,
+                    "_id": "0.0.0",
+                    "_locator": "//vtrack/ns/john.doe.test/components/your_component_name/builds/0.0.0",
+                    "_parent": "//vtrack/ns/john.doe.test/components/your_component_name/builds",
+                    "_type": "vtrack.Build",
+                    "_createdAt": "2019-01-21T09:57:54.734050+00:00",
+                    "_createdBy": "EXXXXXX",
+                    "_updatedAt": "2019-01-21T09:57:54.734050+00:00",
+                    "artifacts": [{"id": "myArtifact:0.1"}, {"id": "myArtifact2:1.2.1"}],
+                    "dependencies":[{"id": "myArtifact:0.1"}, {"id": "myArtifact2:1.2.1"}],
+                    "testing": {"example": {"url":"sonarUrl"}},
+                    "security": {"result": "PASS"},
+                    "branch": "your_vcs_branch",
+                    "buildnumber": 1,
+                    "commit": "your_vcs_commit",
+                    "component_id": "your_component_name",
+                    "duration": 0,
+                    "end_date": "2018-04-17T14:08:25+00:00",
+                    "inception_time": "2018-04-17T14:08:25+00:00",
+                    "metadata": {"logs" : "http://url_where_you_store_metadata_and_logs"},
+                    "slave": ["your_kind_of_slave1", "your_kind_of_slave2"],
+                    "start_date": "2018-04-17T14:08:25+00:00",
+                    "status": "successful",
+                    "url": "http://www.your_ci_tool.com/job/XXXX",
+                    "userbuild": "user_of_the_build@mydomain.com",
+                    "version": "0.0.0"
+                }
+    }

@@ -1,0 +1,16 @@
+
+{
+    "status" : "deployed",
+    "params" : {"param1": "value1"},
+    "environment" : "pro",
+    "country" : "es",
+    "userdeploy" : "user_of_the_build@mydomain.com",
+    "date" : 1519282839437,
+    "extendedInfo": {
+        "error" : "error reason... "
+    },
+    "region" : [
+        "central",
+        "live-01"
+    ]
+}

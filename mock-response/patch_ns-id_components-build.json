@@ -1,0 +1,26 @@
+{
+    "data" :
+        {
+            "_ac": false,
+            "_createdAt": "2018-12-26T05:23:19.069272+00:00",
+            "_id": "3",
+            "_locator": "//vtrack/ns/test/components/test_component/builds/0.0.2/deploys/3",
+            "_parent": "//vtrack/ns/test/components/test_component/builds/0.0.2/deploys",
+            "_type": "vtrack.Deploy",
+            "_updatedAt": "2018-12-26T05:23:19.069272+00:00",
+            "build_id": "0.0.2",
+            "country": "es",
+            "date": "2018-02-23T13:00:40+00:00",
+            "environment": "play",
+            "ns": "test",
+            "params": {"param1": "value1"},
+            "extendedInfo": {
+                "error" : "error reason... "
+            },
+            "status": "deployed",
+            "name":"my_name",
+            "lead_time": 108001,
+            "time_to_market": 28879658,
+            "userdeploy": "user_of_the_deploy@mydomain.com"
+        }
+}
