@@ -7,6 +7,7 @@ const archResponse = require('./mock-response/get_arch.json');
 const nsResponse = require('./mock-response/get_ns-id.json');
 const nsComponentResponse = require('./mock-response/get_ns-id_component-id');
 const archivedResponse = require('./mock-response/post_archived.json');
+const getNsIdComponentsBuild = require('./mock-response/get_ns-id_components-build');
 const postNsResponse = require('./mock-response/post_ns-id_components-build');
 const patchNsResponse = require('./mock-response/post_ns-id_components-build');
 
@@ -42,6 +43,13 @@ app.post('/ns/:nsId/components/:componentId:restoreComponent', (req, res) => {
 */
 app.patch('/ns/:nsId/components/:componentId', (req, res) => {
     res.json(nsComponentResponse);
+});
+
+/*  GET /ns/{ns-id}/components/{component-id}/builds/{build-id}/deploys
+    Service for listing all deploys of a build.  
+*/
+app.get('/ns/:nsId/components/:componentId/builds/:buildId/deploys', (req, res) => {
+    res.json(getNsIdComponentsBuild);
 });
 
 /*  POST /ns/{ns-id}/components/{component-id}/builds/{build-id}/deploys
