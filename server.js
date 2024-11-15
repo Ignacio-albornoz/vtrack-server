@@ -50,8 +50,30 @@ app.patch('/ns/:nsId/components/:componentId', (req, res) => {
     Service for listing all builds of a component within given Namespace.  
 */
 app.get('/v0/ns/:namespace/components/:componentId/builds', (req, res) => {
-    res.json(getNsIdComponentsBuildQuery);
+    const query = req.query.q; // Obtener el parámetro q de la consulta
+    
+    // Validar si 'q' contiene el formato esperado
+    if (!query) {
+        return res.status(400).json({ error: "Missing query parameter 'q'" });
+    }
+    console.log("EL Query es: " + query);
+    const expectedPattern = /version=like='[^']*'/; // Patrón para validar las comillas simples
+    
+    if (!expectedPattern.test(query)) {
+        return res.status(400).json({ 
+            error: "Invalid format for 'q'. Expected: version=like='<value>'",
+            received: query 
+        });
+    }
+
+    // Si pasa la validación, responder con éxito
+    res.json({
+        message: "Query validated successfully",
+        query: query,
+        mockData: getNsIdComponentsBuildQuery
+    });
 });
+
 
 
 /*  GET /ns/{ns-id}/components/{component-id}/builds/{build-id}/deploys
