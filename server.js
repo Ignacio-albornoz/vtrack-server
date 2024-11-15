@@ -56,9 +56,8 @@ app.get('/v0/ns/:namespace/components/:componentId/builds', (req, res) => {
     if (!query) {
         return res.status(400).json({ error: "Missing query parameter 'q'" });
     }
-    console.log("EL Query es: " + query);
-    const expectedPattern = /version=like='[^']*'/; // Patrón para validar las comillas simples
-    
+
+    const expectedPattern = /version=like=(?:'[^']*'|\\'[^\\']*\\')/;
     if (!expectedPattern.test(query)) {
         return res.status(400).json({ 
             error: "Invalid format for 'q'. Expected: version=like='<value>'",
